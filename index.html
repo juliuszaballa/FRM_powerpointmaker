@@ -268,7 +268,8 @@
             slide.addImage({ data: out.img, x, y, w: cellW, h: cellH - 0.4 });
           } else {
             // leave empty if no image
-            slide.addShape(pptx.ShapeType.rect, { x, y, w: cellW, h: cellH-0.4, fill: { color: "FFFFFF" } });
+            slide.addShape(pptx.ShapeType.rect, { x, y, w: cellW, h: cellH-0.4, fill: { color: "F3F4F6" } });
+            slide.addText("No Image", { x, y, w: cellW, h: cellH-0.4, align: "center", valign: "middle", color:"555", fontSize:12 });
           }
 
           slide.addText(out.name || "Outlet Name", {
@@ -287,3 +288,4 @@
   </script>
 </body>
 </html>
+
